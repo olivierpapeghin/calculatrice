@@ -27,6 +27,6 @@ export class EchecService {
         // Donc on cherche le dernier élément de la liste
         console.log(reponse[reponse.length-1]);
         // On renvoie le dernier échec et le nombre total d'échecs
-        return [reponse[reponse.length-1],reponse.length+1]; 
+        return [reponse[reponse.length-1],reponse.length]; 
     }
 }

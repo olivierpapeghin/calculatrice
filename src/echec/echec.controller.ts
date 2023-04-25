@@ -7,7 +7,7 @@ export class EchecController {
   constructor(private echecService: EchecService) {}
 
   @Post() // On a reçu un POST à localhost:3000/Echec, il faut donc créer un échec avec les infos de la requête
-  createEchec():Promise<(number|Echec)[]>{
+  HandleEchec():Promise<(number|Echec)[]>{
         console.log("POST reçu pour un échec !");
         // Dans un premier temps on crée un échec pour update la DB
         this.echecService.createEchec();
