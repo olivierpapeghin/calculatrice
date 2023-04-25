@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Projet Calculatrice</title>
+    <link rel="stylesheet" href="./calculatrice.css">
+    <script src="./calculatrice.js"></script>
+</head>
+<body>
+
+    <div class="calculatrice">
+        <div class="zone_resultat">
+            <div id="resultat_calcul"></div>
+            <div id="egal">=</div>
+            <div id="resultat"></div>
+        </div>
+        <input type="text" value="" class="zone_affichage" autofocus>
+        
+        <div class="zone_boutons">
+                <button onclick="calculatrice.ajoutCarac('1')">1</button>
+                <button onclick="calculatrice.ajoutCarac('2')">2</button>
+                <button onclick="calculatrice.ajoutCarac('3')">3</button>
+                <button onclick="calculatrice.ajoutCarac('+')">+</button>
+                <button onclick="calculatrice.suppCarac()">Suppr</button>
+                <button onclick="calculatrice.reset()">C</button>
+
+                <button onclick="calculatrice.ajoutCarac('4')">4</button>
+                <button onclick="calculatrice.ajoutCarac('5')">5</button>
+                <button onclick="calculatrice.ajoutCarac('6')">6</button>
+                <button onclick="calculatrice.ajoutCarac('-')">-</button>
+                <button onclick="calculatrice.ajoutCarac('\u0028')">&#x28;</button>
+                <button onclick="calculatrice.ajoutCarac('\u0029')">&#41;</button>
+
+                <button onclick="calculatrice.ajoutCarac('7')">7</button>
+                <button onclick="calculatrice.ajoutCarac('8')">8</button>
+                <button onclick="calculatrice.ajoutCarac('9')">9</button>
+                <button onclick="calculatrice.ajoutCarac('*')">x</button>
+                <button onclick="calculatrice.precedent()" style="margin-right : 15%;">▲</button>
+
+                <button onclick="calculatrice.ajoutCarac('0')">0</button>
+                <button onclick="calculatrice.ajoutCarac('.')">,</button>
+                <button onclick="calculatrice.ajoutCarac('%')">%</button>
+                <button onclick="calculatrice.ajoutCarac('/')">÷</button>
+                <button id="validation" onclick="calculatrice.operer()">=</button>
+        </div>
+    </div>
+</body>
+</html>
